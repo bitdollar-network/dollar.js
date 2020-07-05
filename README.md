@@ -47,10 +47,11 @@ This will expose `Dollar` on the window object.
 ## Usage
 
 ```js
-// in node.js
+// require('dollar') only necessary for NodeJS
 var Dollar = require('dollar');
 
-var dollar = new Dollar('ws://localhost:8546');
+// After starting dollar client
+var dollar = new Dollar(new Dollar.providers.HttpProvider('http://localhost:8545'));
 console.log(dollar);
 
 ```
@@ -58,9 +59,9 @@ console.log(dollar);
 Additionally you can set a provider using `dollar.setProvider()` (e.g. WebsocketProvider)
 
 ```js
-dollar.setProvider('ws://localhost:8546');
-// or
-dollar.setProvider(new Dollar.providers.WebsocketProvider('ws://localhost:8546'));
+dollar.setProvider('http://localhost:8545');
+// Or
+dollar.setProvider(new Dollar.providers.HttpProvider('http://localhost:8545'));
 ```
 
 There you go, now you can use it:

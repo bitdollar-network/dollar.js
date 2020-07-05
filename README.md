@@ -117,7 +117,8 @@ npm test
 ### Contributing
 
 - All contributions have to go into develop branch
-- Please follow the code style of the other files, we use 4 spaces as tabs.
+- Please follow the code style of the other files.
+- Please use 4 spaces as tabs.
 
 ### Community
  - [Gitter](https://gitter.im/bitdollar-network/dollar.js?source=orgpage)

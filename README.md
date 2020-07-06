@@ -47,8 +47,8 @@ This will expose `Dollar` on the window object.
 ## Usage
 
 ```js
-// require('dollar') only necessary for NodeJS
-var Dollar = require('dollar');
+// require('@bitdollar/dollar') only necessary for NodeJS
+var Dollar = require('@bitdollar/dollar');
 
 // After starting dollar client
 var dollar = new Dollar(new Dollar.providers.HttpProvider('http://localhost:8545'));

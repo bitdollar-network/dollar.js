@@ -47,13 +47,14 @@ This will expose `Dollar` on the window object.
 ## Usage
 
 ```js
-// Currently not supporting NodeJS, but supporting use as vanilla JS
+// Currently only supporting use as vanilla JS
 // Please move and use the dist/dollar-signer.min.js file.
 
 // require('@bitdollar/dollar') only necessary for NodeJS
-var Dollar = require('@bitdollar/dollar'); // currently not supporting nodejs
+// var Dollar = require('@bitdollar/dollar');
 
 // Moving dist/dollar.min.js to your folder and after starting dollar client,
+
 var dollar = new Dollar(new Dollar.providers.HttpProvider('http://localhost:8545'));
 console.log(dollar);
 
